@@ -11,7 +11,7 @@ console.log(y);
 let y = 10;
 ```
 **Resposta:**
-Alternativa certa é A. Porque a  variável `x` sofre hoisting, mas apenas sua declaração é elevada, resultando em `undefined`. A variável `y`, declarada com `let`, não sofre hoisting da mesma forma e gera um erro quando acessada antes da declaração.
+Alternativa certa é A. Porque a  variável x sofre hoisting, mas apenas sua declaração é elevada, resultando em undefined. A variável y, declarada com let, não sofre hoisting da mesma forma e gera um erro quando acessada antes da declaração.
 
 ---
 
@@ -26,7 +26,7 @@ function soma(a, b) {
 console.log(soma(2, 0));
 ```
 **Resposta:**
-Alternativa certa é A. Porque o operador `||` não verifica `b === 0` corretamente. A verificação correta exige `a === 0 || b === 0` para validar se algum dos valores é zero.
+Alternativa certa é A. Porque o operador || não verifica b === 0 corretamente. A verificação correta exige a === 0 || b === 0 para validar se algum dos valores é zero.
 
 ---
 
@@ -52,7 +52,7 @@ function calcularPreco(tipo) {
 console.log(calcularPreco("eletrônico"));
 ```
 **Resposta:**
-Alternativa certa é B. Porque o `switch` não tem `break` após `preco = 1000;`, então ele continua para o próximo caso (`vestuário`) e redefine `preco` para `200` antes de sair.
+Alternativa certa é B. Porque o switch não tem break após preco = 1000, então ele continua para o próximo caso (vestuário) e redefine preco para 200 antes de sair.
 
 ---
 
@@ -63,7 +63,7 @@ let resultado = numeros.map(x => x * 2).filter(x => x > 5).reduce((a, b) => a + 
 console.log(resultado);
 ```
 **Resposta:**
-Alternativa certa é C. Porque a multiplicação por 2 gera `[2, 4, 6, 8, 10]`, filtrando valores `>5` fica `[6, 8, 10]`, e a soma total é `18`.
+Alternativa certa é C. Porque a multiplicação por 2 gera [2, 4, 6, 8, 10], filtrando valores >5 fica [6, 8, 10], e a soma total é 18.
 
 ---
 
@@ -74,19 +74,19 @@ lista.splice(1, 2, "abacaxi", "manga");
 console.log(lista);
 ```
 **Resposta:**
-Alternativa certa é C. Porque o `splice(1, 2, "abacaxi", "manga")` remove `maçã` e `uva` e insere `abacaxi` e `manga` no lugar.
+Alternativa certa é C. Porque o splice(1, 2, "abacaxi", "manga") remove maçã e uva e insere abacaxi e manga no lugar.
 
 ---
 
 ### 6) Sobre herança em JavaScript:
 **Resposta:**
-Alternativa certa é A. Porque `extends` permite herança, e a herança evita repetição de código, tornando a reutilização mais eficiente.
+Alternativa certa é A. Porque extends permite herança, e a herança evita repetição de código, tornando a reutilização mais eficiente.
 
 ---
 
 ### 7) Análise de código:
 **Resposta:**
-Alternativa certa é A. Porque a classe `Funcionario` herda `Pessoa`, acessa diretamente `nome` e `idade` e usa `super.apresentar()` para manter a funcionalidade original antes de adicionar sua própria lógica.
+Alternativa certa é A. Porque a classe Funcionario herda Pessoa, acessa diretamente nome e idade e usa super.apresentar() para manter a funcionalidade original antes de adicionar sua própria lógica.
 
 ---
 
@@ -110,9 +110,9 @@ function somaArray(numeros) {
 console.log(somaArray([1, 2, 3, 4]));
 ```
 **Correções:**
-1. `soma` precisa ser inicializada (`let soma = 0;`).
-2. `.size` não é uma propriedade válida para arrays, `numeros.length` é o correto.
-3. A soma deve acumular os valores (`soma += 2 * numeros[i];`) ao invés de apenas substituir `soma`.
+1. soma precisa ser inicializada (let soma = 0;).
+2. size não é uma propriedade válida para arrays, numeros.length é o correto.
+3. A soma deve acumular os valores (soma += 2 * numeros[i];) ao invés de apenas substituir soma.
 
 ---
 
@@ -142,8 +142,8 @@ let livro1 = new Livro("JavaScript Avançado", 100);
 console.log(livro1.calcularDesconto()); // Saída: 80
 ```
 **Explicação:**
-- A classe `Produto` define atributos e um método `calcularDesconto()`.
-- `Livro` herda de `Produto` e sobrescreve `calcularDesconto()` para aplicar um desconto maior.
+- A classe Produto define atributos e um método calcularDesconto().
+- Livro herda de Produto e sobrescreve calcularDesconto() para aplicar um desconto maior.
 - O uso de herança evita código duplicado e permite a personalização dos métodos nas subclasses.
 
 ---
