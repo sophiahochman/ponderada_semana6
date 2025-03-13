@@ -11,8 +11,7 @@ console.log(y);
 let y = 10;
 ```
 **Resposta:**
-- **Alternativa certa:** a) A saída será `undefined` seguido de erro.
-- **Justificativa:** A variável `x` sofre hoisting, mas apenas sua declaração é elevada, resultando em `undefined`. A variável `y`, declarada com `let`, não sofre hoisting da mesma forma e gera um erro quando acessada antes da declaração.
+Alternativa certa é A. Porque a  variável `x` sofre hoisting, mas apenas sua declaração é elevada, resultando em `undefined`. A variável `y`, declarada com `let`, não sofre hoisting da mesma forma e gera um erro quando acessada antes da declaração.
 
 ---
 
@@ -27,8 +26,7 @@ function soma(a, b) {
 console.log(soma(2, 0));
 ```
 **Resposta:**
-- **Alternativa correta:** a) Substituir `if (a || b === 0)` por `if (a === 0 || b === 0)`
-- **Justificativa:** O operador `||` não verifica `b === 0` corretamente. A verificação correta exige `a === 0 || b === 0` para validar se algum dos valores é zero.
+Alternativa certa é A. Porque o operador `||` não verifica `b === 0` corretamente. A verificação correta exige `a === 0 || b === 0` para validar se algum dos valores é zero.
 
 ---
 
@@ -54,8 +52,7 @@ function calcularPreco(tipo) {
 console.log(calcularPreco("eletrônico"));
 ```
 **Resposta:**
-- **Alternativa correta:** b) O código imprime `200`.
-- **Justificativa:** O `switch` não tem `break` após `preco = 1000;`, então ele continua para o próximo caso (`vestuário`) e redefine `preco` para `200` antes de sair.
+Alternativa certa é B. Porque o `switch` não tem `break` após `preco = 1000;`, então ele continua para o próximo caso (`vestuário`) e redefine `preco` para `200` antes de sair.
 
 ---
 
@@ -66,8 +63,7 @@ let resultado = numeros.map(x => x * 2).filter(x => x > 5).reduce((a, b) => a + 
 console.log(resultado);
 ```
 **Resposta:**
-- **Alternativa correta:** c) `18`
-- **Justificativa:** Multiplicação por 2 gera `[2, 4, 6, 8, 10]`, filtrando valores `>5` fica `[6, 8, 10]`, e a soma total é `18`.
+Alternativa certa é C. Porque a multiplicação por 2 gera `[2, 4, 6, 8, 10]`, filtrando valores `>5` fica `[6, 8, 10]`, e a soma total é `18`.
 
 ---
 
@@ -78,29 +74,25 @@ lista.splice(1, 2, "abacaxi", "manga");
 console.log(lista);
 ```
 **Resposta:**
-- **Alternativa correta:** c) `["banana", "abacaxi", "manga", "laranja"]`
-- **Justificativa:** O `splice(1, 2, "abacaxi", "manga")` remove `maçã` e `uva` e insere `abacaxi` e `manga` no lugar.
+Alternativa certa é C. Porque o `splice(1, 2, "abacaxi", "manga")` remove `maçã` e `uva` e insere `abacaxi` e `manga` no lugar.
 
 ---
 
 ### 6) Sobre herança em JavaScript:
 **Resposta:**
-- **Alternativa correta:** a) As duas afirmações são verdadeiras, e a segunda justifica a primeira.
-- **Justificativa:** `extends` permite herança, e a herança evita repetição de código, tornando a reutilização mais eficiente.
+Alternativa certa é A. Porque `extends` permite herança, e a herança evita repetição de código, tornando a reutilização mais eficiente.
 
 ---
 
 ### 7) Análise de código:
 **Resposta:**
-- **Alternativa correta:** a) I e II são verdadeiras.
-- **Justificativa:** A classe `Funcionario` herda `Pessoa`, acessa diretamente `nome` e `idade` e usa `super.apresentar()` para manter a funcionalidade original antes de adicionar sua própria lógica.
+Alternativa certa é A. Porque a classe `Funcionario` herda `Pessoa`, acessa diretamente `nome` e `idade` e usa `super.apresentar()` para manter a funcionalidade original antes de adicionar sua própria lógica.
 
 ---
 
 ### 8) Polimorfismo em JavaScript:
 **Resposta:**
-- **Alternativa correta:** b) A asserção é verdadeira e a razão é falsa.
-- **Justificativa:** JavaScript permite polimorfismo por sobrescrita de métodos, mas não por sobrecarga como em outras linguagens (Java, C++).
+Alternativa coerta é B. Porque javaScript permite polimorfismo por sobrescrita de métodos, mas não por sobrecarga como em outras linguagens (Java, C++).
 
 ---
 
@@ -155,7 +147,3 @@ console.log(livro1.calcularDesconto()); // Saída: 80
 - O uso de herança evita código duplicado e permite a personalização dos métodos nas subclasses.
 
 ---
-
-**Instruções finais:**
-- Teste os códigos no VS Code antes de enviá-los.
-- Publique o arquivo `lista_01.md` no repositório e envie o link pela Adalove.
