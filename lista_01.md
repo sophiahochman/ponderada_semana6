@@ -22,7 +22,7 @@ var x = 5;
 console.log(y);
 let y = 10;
 ```
-## a) A saída será undefined seguido de erro.
+#### a) A saída será undefined seguido de erro.
 JUSTIFICATIVA: `var x` é içado (hoisting), mas sem valor atribuído, então `console.log(x)` imprime `undefined`, `let y` também sofre hoisting, mas não é inicializado. O acesso a `y` antes da declaração gera um erro `ReferenceError`.
 
 
@@ -45,7 +45,7 @@ function soma(a, b) {
 console.log(soma(2, 0));
 ```
 
-## a) Substituir if (a || b === 0) por if (a === 0 || b === 0).
+#### a) Substituir if (a || b === 0) por if (a === 0 || b === 0).
 JUSTIFICATIVA: `a || b === 0` é avaliado como `(a) || (b === 0)`, o que não verifica corretamente se `a` ou `b` são `0`, A correção `if (a === 0 || b === 0)` faz a verificação correta.
 
 b) Substituir if (a || b === 0) por if (a === 0 && b === 0)
@@ -81,7 +81,7 @@ console.log(calcularPreco("eletrônico"));
 
 a) O código imprime 1000.
 
-## b) O código imprime 200.
+#### b) O código imprime 200.
 JUSTIFICATIVA: Faltou `break` após `preco = 1000`, então a execução continua até `case "vestuário"`, sobrescrevendo `preco` para `200`.
 
 c) O código imprime 50.
@@ -101,7 +101,7 @@ a) 0
 
 b) 6
 
-## c) 18
+#### c) 18
 JUSTIFICATIVA: 
 `map(x => x * 2)`: `[2, 4, 6, 8, 10]`
 `filter(x > 5)`: `[6, 8, 10]`
@@ -121,7 +121,7 @@ a) ["banana", "maçã", "uva", "abacaxi", "manga", "laranja"]
 
 b) ["banana", "abacaxi", "manga"]
 
-## c) ["banana", "abacaxi", "manga", "laranja"]
+#### c) ["banana", "abacaxi", "manga", "laranja"]
 JUSTIFICATIVA:  `splice(1, 2, "abacaxi", "manga")` remove 2 elementos (`maçã` e `uva`) e insere `abacaxi` e `manga`.
 
 d) ["banana", "maçã", "uva", "abacaxi", "manga"]
@@ -132,7 +132,7 @@ I. A herança é utilizada para compartilhar métodos e propriedades entre class
 II. Em JavaScript, a herança é implementada através da palavra-chave `extends`.
 
 
-## a) As duas afirmações são verdadeiras, e a segunda justifica a primeira.
+#### a) As duas afirmações são verdadeiras, e a segunda justifica a primeira.
 JUSTIFICATIVA: JavaScript permite herança de classes usando `extends`, o que evita repetição de código.
 
 b) As duas afirmações são verdadeiras, mas a segunda não justifica a primeira.
@@ -175,7 +175,7 @@ III) O código não funciona corretamente, pois Funcionario não pode herdar de 
 
 Quais das seguintes afirmações são verdadeiras sobre o código acima?
 
-## a) I e II são verdadeiras.
+#### a) I e II são verdadeiras.
 JUSTIFICATIVA: `Funcionario` herda de `Pessoa`, então acessa `nome` e `idade`,`super.apresentar();` chama o método da classe pai antes de adicionar mais conteúdo.
 
 b) I, II e III são verdadeiras.
@@ -193,7 +193,7 @@ ______
 
 a) A asserção é falsa e a razão é verdadeira.
 
-## b) A asserção é verdadeira e a razão é falsa.
+#### b) A asserção é verdadeira e a razão é falsa.
 JUSTIFICATIVA: Polimorfismo permite diferentes implementações para um mesmo método, javaScript não suporta sobrecarga de métodos diretamente, apenas sobrescrita.
 
 
