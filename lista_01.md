@@ -98,7 +98,7 @@ Alternativa coerta é B. Porque javaScript permite polimorfismo por sobrescrita 
 
 ## Questões Dissertativas
 
-### 1) Correção do código:
+### 9) Correção do código:
 ```javascript
 function somaArray(numeros) {
     let soma = 0; // Inicializa soma corretamente
@@ -109,14 +109,14 @@ function somaArray(numeros) {
 }
 console.log(somaArray([1, 2, 3, 4]));
 ```
-**Correções:**
+**Correções feitas:**
 1. soma precisa ser inicializada (let soma = 0;).
 2. size não é uma propriedade válida para arrays, numeros.length é o correto.
 3. A soma deve acumular os valores (soma += 2 * numeros[i];) ao invés de apenas substituir soma.
 
 ---
 
-### 2) Herança com classes `Produto` e `Livro`:
+### 10) Herança com classes `Produto` e `Livro`:
 ```javascript
 class Produto {
     constructor(nome, preco) {
